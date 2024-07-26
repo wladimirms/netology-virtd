@@ -1,0 +1,37 @@
+{
+  "builders": [
+    {
+      "type": "yandex",
+      "token": "yyyyy",
+      "folder_id": "b1gb5es4tqhi7j0ohvrq",
+      "zone": "ru-central1-a",
+      "image_name": "debian-11-docker-tmux",
+      "image_description": "my custom debian with docker",
+      "source_image_family": "debian-11",
+      "subnet_id": "e9brfhk4mhgckvhppbsh",
+      "use_ipv4_nat": true,
+      "disk_type": "network-hdd",
+      "ssh_username": "debian"
+    }
+  ],
+  "provisioners": [
+    {
+      "type": "shell",
+      "inline": [
+        "echo 'hello from packer'",
+        "echo 'debconf debconf/frontend select Noninteractive' | sudo debconf-set-selections",
+        "sudo apt-get install -y -q",
+        "sudo apt-get -y update",
+        "sudo apt-get -y install ca-certificates curl gnupg",
+        "sudo install -m 0755 -d /etc/apt/keyrings",
+        "curl -fsSL https://download.docker.com/linux/debian/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg",
+        "sudo chmod a+r /etc/apt/keyrings/docker.gpg",
+        "echo deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/debian $(. /etc/os-release && echo '$VERSION_CODENAME') stable' | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null",
+        "sudo apt-get -y update",
+        "sudo apt-get install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin",
+        "sudo apt-get install -y htop",
+        "sudo apt-get install -y tmux"
+      ]
+    }
+  ]
+}

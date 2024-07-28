@@ -3,19 +3,16 @@
 netology-edu
 
 # Задание 1
-<img width="958" alt="Снимок экрана 2024-07-09 в 22 10 24" src="https://github.com/wladimirms/netology-edu/assets/47062204/c5759584-6d57-4917-b139-863cadde7484">
+
+<img width="1439" alt="Снимок экрана 2024-07-28 в 13 22 12" src="https://github.com/user-attachments/assets/73f5a578-97a3-4fbf-b723-7b6eacab6e5c">
 
 Скриншот с моими ресурсами ВМ на YCloud Console
 
-
-
-<img width="525" alt="Снимок экрана 2024-07-09 в 23 02 07" src="https://github.com/wladimirms/netology-edu/assets/47062204/b58eac53-ffa6-4f87-9d27-58dfcb8025f6">
+<img width="525" alt="Снимок экрана 2024-07-09 в 23 02 07" src="https://github.com/user-attachments/assets/1c4f6918-799d-4512-b2ef-ee7ffa147bf5">
 
 Скриншот с доступностью ВМ и версией Docker
 
-
-
-<img width="516" alt="Снимок экрана 2024-07-09 в 23 04 01" src="https://github.com/wladimirms/netology-edu/assets/47062204/02097c49-819e-4746-b918-1765e900309c">
+<img width="1209" alt="Снимок экрана 2024-07-28 в 13 21 35" src="https://github.com/user-attachments/assets/b3a568fb-5bed-45a7-8356-ce4b0bbbe77a">
 
 Скриншот с потреблением
 
